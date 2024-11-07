@@ -1,0 +1,47 @@
+{
+  "name": "lab-007-require-import",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --watch"
+  },
+  "private": true,
+  "dependencies": {
+    "@prograpedia/routing-controllers": "npm:@jsr/prograpedia__routing-controllers@0.10.4-alpha.9",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "cookie": "^1.0.1",
+    "express": "^5.0.1",
+    "multer": "^1.4.5-lts.1",
+    "reflect-metadata": "^0.2.2",
+    "template-url": "^1.0.0",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.9.0",
+    "@types/supertest": "^6.0.2",
+    "debug": "^4.3.7",
+    "jest": "^29.7.0",
+    "morgan": "^1.10.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "tsx": "^4.19.2"
+  },
+  "imports": {
+    "npm:express@^4.21.1": {
+      "express": "npm:express@^4.21.1"
+    }
+  },
+  "packageManager": "npm@10.9.0+sha512.65a9c38a8172948f617a53619762cd77e12b9950fe1f9239debcb8d62c652f2081824b986fee7c0af6c0a7df615becebe4bf56e17ec27214a87aa29d9e038b4b"
+}
