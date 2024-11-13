@@ -1,9 +1,8 @@
 import express, { Request, Response, NextFunction } from "express";
 import morgan from "morgan";
 import { useExpressServer } from "@prograpedia/routing-controllers";
-import path from "path";
 
-const rootDir = path.dirname(require.resolve('./app.ts'));
+const rootDir = import.meta.dirname || import.meta.url.replace(/file:\/\/|\/app.[jt]s/g, '');
 
 const app = express();
 

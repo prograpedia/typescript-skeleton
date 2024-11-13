@@ -5,7 +5,7 @@
     "target": "es2023",
     "moduleResolution": "nodenext",
     "allowImportingTsExtensions": true,
-    "types": ["node", "jest", "express"]
+    "types": ["node", "jest", "express", "multer"]
   },
   "include": ["**/*.ts"]
 }

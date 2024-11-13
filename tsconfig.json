@@ -6,7 +6,7 @@
     "experimentalDecorators": true,
     "outDir": "dist",
     "esModuleInterop": true,
-    "types": ["node", "express"],
+    "types": ["node", "express", "multer"],
     "strict": true,
     "skipLibCheck": true
   },
